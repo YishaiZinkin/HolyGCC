@@ -1,0 +1,30 @@
+This plugin enables HolyC prints in standard C.
+
+HolyC is a programming language based on C that was used for writing TempleOS.
+It was created by Terry A. Davis.
+
+One of HolyC's features is printing without the need to write printf
+boilerplates. For example, instead of writing
+
+    printf ("Hello world\n");
+
+in HolyC (and with this plugin) you can write just
+
+    "Hello world\n";
+
+
+Notes:
+
+ - This plugin doesn't inhibit -Wunused-value, so if this flag is set HolyC
+   prints actually trigger warnings.
+
+ - The plugin doesn't support formatted strings in HolyC prints.
+
+ - HolyC prints are supported in C only.
+
+ - HolyC prints are not supported inside nested functions.
+
+
+At the start if this video you can watch Terry A. Davis explaining about
+printing in HolyC:
+https://www.youtube.com/watch?v=7uLzaKlZSQQ
